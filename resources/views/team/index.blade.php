@@ -19,7 +19,9 @@
         @extends('layouts.dashboard')
 
         @section('content')
-        
+           <div class"mt-8 px-8">
+           </div>
+
         <table class="table-auto rounded-t-lg m-5 w-full mx-auto bg-gray-200 text-gray-800">
         <tr class="text-left border-b-2 border-gray-300">
             <th class="px-4 py-3">Name</th>
@@ -39,6 +41,7 @@
 
         </table>
         
-        @endsection
+   
     </body>
-</html>
+</html>     
+@endsection

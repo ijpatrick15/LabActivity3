@@ -66,4 +66,17 @@ class User extends Authenticatable
             config('workkit.date_format')
         );
     }
+
+   /**
+    * @return BelongsToMany
+    */
+
+    public function chatRooms():BelongsToMany
+    {
+        return $this->belongsToMany(chatRoom::class, table:'chat_room_members');
+    }
+    public function messages() : HasMany
+    {
+        return $this->hasMany(Messages::class,'sender_id');
+    }
 }

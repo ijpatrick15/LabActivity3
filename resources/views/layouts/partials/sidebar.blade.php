@@ -18,6 +18,7 @@
       <p><i class="fa fa-folder" aria-hidden="true"></i> Projects</p>
       <p><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</p>
       <p><i class="fa fa-comments-o" aria-hidden="true"></i> Chat</p>
+      <a href="{{ url('/chat') }}"><p class="{{ Route::current()->getName() == 'chat.index' ? 'text-warning' : '' }}" ><i class="fa fa-users" aria-hidden="true"></i> Chat</p></a>
       <a href="{{ url('/team') }}"><p class="{{ Route::current()->getName() == 'team.index' ? 'text-warning' : '' }}" ><i class="fa fa-users" aria-hidden="true"></i> Team</p></a>
     </nav>
 
